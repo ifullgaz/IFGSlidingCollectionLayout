@@ -27,7 +27,7 @@ Based an code from RPSlidingMenu, this library incorporates improvements to flex
   s.source           = { :git => "https://github.com/ifullgaz/IFGSlidingCollectionLayout.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'

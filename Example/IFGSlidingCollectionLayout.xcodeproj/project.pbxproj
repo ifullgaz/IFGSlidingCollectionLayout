@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148748FB1BD9285300338C43 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 148748F81BD9285300338C43 /* CollectionCell.m */; settings = {ASSET_TAGS = (); }; };
+		148748FC1BD9285300338C43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148748FA1BD9285300338C43 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		14B605891BD966F200B9BC7A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B605881BD966F200B9BC7A /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		1DF07FA562FF29FEABF81FEC /* Pods_IFGSlidingCollectionLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7158DA868953371AFB74C4E2 /* Pods_IFGSlidingCollectionLayout_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -14,7 +17,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* IFGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* IFGAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* IFGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* IFGViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -38,8 +40,13 @@
 /* Begin PBXFileReference section */
 		0688F828D4C6C8E8D727E40F /* IFGSlidingCollectionLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IFGSlidingCollectionLayout.podspec; path = ../IFGSlidingCollectionLayout.podspec; sourceTree = "<group>"; };
 		0721165910789B277DF10913 /* Pods_IFGSlidingCollectionLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFGSlidingCollectionLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		148748F71BD9285300338C43 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
+		148748F81BD9285300338C43 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
+		148748F91BD9285300338C43 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		148748FA1BD9285300338C43 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14B605881BD966F200B9BC7A /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		59D91E2642893E57C3D2DFE1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* IFGSlidingCollectionLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = IFGSlidingCollectionLayout.app; path = IFGSlidingCollectionLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* IFGSlidingCollectionLayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFGSlidingCollectionLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -49,10 +56,8 @@
 		6003F59B195388D20070C39A /* IFGSlidingCollectionLayout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IFGSlidingCollectionLayout-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* IFGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFGAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* IFGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFGAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* IFGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFGViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* IFGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFGViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = IFGSlidingCollectionLayout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* IFGSlidingCollectionLayout_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFGSlidingCollectionLayout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -108,8 +113,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* IFGSlidingCollectionLayout.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* IFGSlidingCollectionLayout_Example.app */,
+				6003F5AE195388D20070C39A /* IFGSlidingCollectionLayout_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,13 +135,16 @@
 		6003F593195388D20070C39A /* Example for IFGSlidingCollectionLayout */ = {
 			isa = PBXGroup;
 			children = (
+				148748F71BD9285300338C43 /* CollectionCell.h */,
+				148748F81BD9285300338C43 /* CollectionCell.m */,
+				148748F91BD9285300338C43 /* ViewController.h */,
+				148748FA1BD9285300338C43 /* ViewController.m */,
 				6003F59C195388D20070C39A /* IFGAppDelegate.h */,
 				6003F59D195388D20070C39A /* IFGAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* IFGViewController.h */,
-				6003F5A6195388D20070C39A /* IFGViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				14B605881BD966F200B9BC7A /* Launch Screen.storyboard */,
 			);
 			name = "Example for IFGSlidingCollectionLayout";
 			path = IFGSlidingCollectionLayout;
@@ -213,7 +221,7 @@
 			);
 			name = IFGSlidingCollectionLayout_Example;
 			productName = IFGSlidingCollectionLayout;
-			productReference = 6003F58A195388D20070C39A /* IFGSlidingCollectionLayout.app */;
+			productReference = 6003F58A195388D20070C39A /* IFGSlidingCollectionLayout_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* IFGSlidingCollectionLayout_Tests */ = {
@@ -234,7 +242,7 @@
 			);
 			name = IFGSlidingCollectionLayout_Tests;
 			productName = IFGSlidingCollectionLayoutTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* IFGSlidingCollectionLayout_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -278,6 +286,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				14B605891BD966F200B9BC7A /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* IFGAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* IFGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				148748FB1BD9285300338C43 /* CollectionCell.m in Sources */,
+				148748FC1BD9285300338C43 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
