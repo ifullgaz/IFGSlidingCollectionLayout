@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'IFGSlidingCollectionLayout_Example', :exclusive => true do
+  pod "IFGSlidingCollectionLayout", :path => "../"
+end
+
+target 'IFGSlidingCollectionLayout_Tests', :exclusive => true do
+  pod "IFGSlidingCollectionLayout", :path => "../"
+
+  
+end
