@@ -22,7 +22,7 @@ pod "IFGSlidingCollectionLayout"
 
 ## Author
 
-Emmanuel Merali, emmanuel@merali.me
+[Emmanuel Merali](https://github.com/ifullgaz)
 
 ## License
 
