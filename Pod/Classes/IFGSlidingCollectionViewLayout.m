@@ -190,16 +190,21 @@
     self.collectionView.scrollIndicatorInsets = insets;
 }
 
-- (void)setSlidingCellDragDumping:(CGFloat)slidingCellDragDumping {
-    if (self.slidingCellDragDumping != slidingCellDragDumping) {
-        [self willChangeValueForKey:@"slidingCellDragDumping"];
-        _slidingCellDragDumping = slidingCellDragDumping;
-        [self didChangeValueForKey:@"slidingCellDragDumping"];
-    }
-}
-
 - (CGFloat)slidingCellDragVelocity {
     return self.slidingCellCollapsedHeight / self.slidingCellDragDumping;
 }
+
+- (void)applyLayoutForItemOnTopAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
+    NSInteger row = indexPath.row;
+    if (row < 0 || row >= [self.layoutAttributes count]) {
+        return;
+    }
+    NSInteger rowOffset = self.slidingCellDragVelocity * indexPath.row;
+    if (self.collectionView.contentOffset.y == rowOffset) {
+        return;
+    }
+    [self.collectionView setContentOffset:CGPointMake(0.0f, rowOffset) animated:animated];
+}
+
 @end
 

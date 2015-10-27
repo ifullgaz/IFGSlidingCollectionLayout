@@ -7,7 +7,7 @@
 //
 
 #import "CollectionCell.h"
-#import <IFGSlidingCollectionLayout/IFGSlidingCollectionViewLayoutAttributes.h>
+#import <IFGSlidingCollectionLayout/IFGSlidingCollectionLayout.h>
 
 @interface CollectionCell ()
 

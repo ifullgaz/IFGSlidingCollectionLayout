@@ -49,5 +49,7 @@
 @property (assign, nonatomic) UIEdgeInsets insets;
 
 - (void)postInitialization;
+- (void)applyLayoutForItemOnTopAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
 
 @end
+

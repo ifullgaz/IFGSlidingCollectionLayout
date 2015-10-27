@@ -7,11 +7,9 @@
 [![License](https://img.shields.io/cocoapods/l/IFGSlidingCollectionLayout.svg?style=flat)](http://cocoapods.org/pods/IFGSlidingCollectionLayout)
 [![Platform](https://img.shields.io/cocoapods/p/IFGSlidingCollectionLayout.svg?style=flat)](http://cocoapods.org/pods/IFGSlidingCollectionLayout)
 
-## Usage
+## Try it
 
 To run the example project, run `pod try IFGSlidingCollectionLayout`.
-
-## Requirements
 
 ## Installation
 
@@ -20,6 +18,14 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "IFGSlidingCollectionLayout"
+```
+
+## Usage
+
+Just import the main header file as such:
+
+```ruby
+#import <IFGSlidingCollectionLayout/IFGSlidingCollectionLayout.h>
 ```
 
 ## Author

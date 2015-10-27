@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CollectionCell.h"
+#import <IFGSlidingCollectionLayout/IFGSlidingCollectionLayout.h>
 
 @interface ViewController ()
 
@@ -50,17 +51,21 @@ static NSString * const reuseIdentifier = @"CollectionCell";
     return slidingMenuCell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [collectionView showItemOnTopAtIndexPath:indexPath animated:YES];
+}
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    // Do any additional setup after loading the view, typically from a nib.
-//    SlidingCollectionViewLayout *layout = (SlidingCollectionViewLayout *)self.collectionViewLayout;
+    // Do any additional setup after loading the view, typically from a nib.
+    IFGSlidingCollectionViewLayout *layout = (IFGSlidingCollectionViewLayout *)self.collectionViewLayout;
 //    layout.slidingCellCollapsedHeight = 88;
 //    layout.slidingCellFeatureHeight   = 240;
-//    layout.slidingCellDragDumping     = .9;
+    layout.slidingCellDragDumping     = .5;
 //    layout.insets = UIEdgeInsetsMake(100, 20, 50, 20);
 }
 
