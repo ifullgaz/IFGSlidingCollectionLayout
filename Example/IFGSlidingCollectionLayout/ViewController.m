@@ -63,10 +63,15 @@ static NSString * const reuseIdentifier = @"CollectionCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     IFGSlidingCollectionViewLayout *layout = (IFGSlidingCollectionViewLayout *)self.collectionViewLayout;
+    layout.slidingCellDragDumping     = .5;
 //    layout.slidingCellCollapsedHeight = 88;
 //    layout.slidingCellFeatureHeight   = 240;
-    layout.slidingCellDragDumping     = .5;
 //    layout.insets = UIEdgeInsetsMake(100, 20, 50, 20);
+    if (self.automaticallyAdjustsScrollViewInsets) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+        layout.insets = UIEdgeInsetsMake(self.navigationController.navigationBar.frame.origin.y + self.navigationController.navigationBar.frame.size.height,
+                                         0, 0, 0);
+    }
 }
 
 @end

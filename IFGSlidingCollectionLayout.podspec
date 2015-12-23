@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "IFGSlidingCollectionLayout"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "A collection view menu in the style of UltraVisual."
 
 # This description is used to generate tags and improve search results.

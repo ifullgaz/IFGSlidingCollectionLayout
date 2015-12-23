@@ -11,6 +11,11 @@
 
 @implementation UICollectionView (IFGSlidingCollectionLayout)
 
+- (NSIndexPath *)indexPathForTopItem {
+    IFGSlidingCollectionViewLayout *layout = (IFGSlidingCollectionViewLayout *)self.collectionViewLayout;
+    return [NSIndexPath indexPathForItem:[layout currentCellIndex] inSection:0];
+}
+
 - (void)showItemOnTopAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
     IFGSlidingCollectionViewLayout *layout = (IFGSlidingCollectionViewLayout *)self.collectionViewLayout;
     [layout applyLayoutForItemOnTopAtIndexPath:indexPath animated:animated];

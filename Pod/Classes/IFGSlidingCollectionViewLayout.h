@@ -43,11 +43,12 @@
 @interface IFGSlidingCollectionViewLayout : UICollectionViewLayout
 
 @property (assign, nonatomic) id<IFGSlidingCollectionViewLayoutDelegate> delegate;
-@property (assign, nonatomic) CGFloat slidingCellFeatureHeight;
-@property (assign, nonatomic) CGFloat slidingCellCollapsedHeight;
-@property (assign, nonatomic) CGFloat slidingCellDragDumping;
-@property (assign, nonatomic) UIEdgeInsets insets;
+@property (assign, nonatomic) CGFloat                       slidingCellFeatureHeight;
+@property (assign, nonatomic) CGFloat                       slidingCellCollapsedHeight;
+@property (assign, nonatomic) CGFloat                       slidingCellDragDumping;
+@property (assign, nonatomic) UIEdgeInsets                  insets;
 
+- (CGFloat)currentCellIndex;
 - (void)postInitialization;
 - (void)applyLayoutForItemOnTopAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
 

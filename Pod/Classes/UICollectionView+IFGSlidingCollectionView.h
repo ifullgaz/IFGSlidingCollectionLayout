@@ -10,6 +10,7 @@
 
 @interface UICollectionView (IFGSlidingCollectionView)
 
+- (NSIndexPath *)indexPathForTopItem;
 - (void)showItemOnTopAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated;
 
 @end

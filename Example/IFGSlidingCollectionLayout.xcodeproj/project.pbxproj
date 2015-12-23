@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		148748FB1BD9285300338C43 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 148748F81BD9285300338C43 /* CollectionCell.m */; settings = {ASSET_TAGS = (); }; };
-		148748FC1BD9285300338C43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148748FA1BD9285300338C43 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		14B605891BD966F200B9BC7A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B605881BD966F200B9BC7A /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		148748FB1BD9285300338C43 /* CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 148748F81BD9285300338C43 /* CollectionCell.m */; };
+		148748FC1BD9285300338C43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148748FA1BD9285300338C43 /* ViewController.m */; };
+		14B605891BD966F200B9BC7A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B605881BD966F200B9BC7A /* Launch Screen.storyboard */; };
 		1DF07FA562FF29FEABF81FEC /* Pods_IFGSlidingCollectionLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7158DA868953371AFB74C4E2 /* Pods_IFGSlidingCollectionLayout_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -252,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IFG;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Emmanuel Merali";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -462,6 +462,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -526,6 +527,7 @@
 				GCC_PREFIX_HEADER = "IFGSlidingCollectionLayout/IFGSlidingCollectionLayout-Prefix.pch";
 				INFOPLIST_FILE = "IFGSlidingCollectionLayout/IFGSlidingCollectionLayout-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -541,6 +543,7 @@
 				GCC_PREFIX_HEADER = "IFGSlidingCollectionLayout/IFGSlidingCollectionLayout-Prefix.pch";
 				INFOPLIST_FILE = "IFGSlidingCollectionLayout/IFGSlidingCollectionLayout-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -563,6 +566,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IFGSlidingCollectionLayout_Example.app/IFGSlidingCollectionLayout_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -582,6 +586,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IFGSlidingCollectionLayout_Example.app/IFGSlidingCollectionLayout_Example";
 				WRAPPER_EXTENSION = xctest;

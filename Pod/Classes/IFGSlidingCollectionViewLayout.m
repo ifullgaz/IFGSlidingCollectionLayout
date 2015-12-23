@@ -42,7 +42,6 @@
 
 @interface IFGSlidingCollectionViewLayout (Private)
 
-- (CGFloat)currentCellIndex;
 - (CGFloat)featureHeight;
 - (CGFloat)collapsedHeight;
 
@@ -50,10 +49,6 @@
 
 
 @implementation IFGSlidingCollectionViewLayout (Private)
-
-- (CGFloat)currentCellIndex {
-    return (self.collectionView.contentOffset.y / self.slidingCellDragVelocity);
-}
 
 - (CGFloat)featureHeight {
     if (self.delegate && [self.delegate respondsToSelector:@selector(heightForFeatureCell)]) {
@@ -76,6 +71,10 @@
 @end
 
 @implementation IFGSlidingCollectionViewLayout
+
+- (CGFloat)currentCellIndex {
+    return (self.collectionView.contentOffset.y / self.slidingCellDragVelocity);
+}
 
 - (void)postInitialization {
     self.slidingCellFeatureHeight = 240;
