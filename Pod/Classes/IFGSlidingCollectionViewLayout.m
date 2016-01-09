@@ -174,7 +174,7 @@
     if (self.pagingEnabled) {
         CGFloat currentCellIndex = [self currentCellIndex];
         NSInteger topFeatureIndex = MAX(0, floorf(currentCellIndex));
-        if (self.collectionView.contentOffset.y < proposedContentOffset.y) {
+        if (currentCellIndex > 0 && self.collectionView.contentOffset.y < proposedContentOffset.y) {
             proposedPageIndex = topFeatureIndex + 1;
         }
         else {
