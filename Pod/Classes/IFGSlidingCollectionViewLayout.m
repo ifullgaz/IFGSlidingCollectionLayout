@@ -170,7 +170,20 @@
 }
 
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity {
-    CGFloat proposedPageIndex = roundf(proposedContentOffset.y / self.slidingCellDragVelocity);
+    CGFloat proposedPageIndex;
+    if (self.pagingEnabled) {
+        CGFloat currentCellIndex = [self currentCellIndex];
+        NSInteger topFeatureIndex = MAX(0, floorf(currentCellIndex));
+        if (self.collectionView.contentOffset.y < proposedContentOffset.y) {
+            proposedPageIndex = topFeatureIndex + 1;
+        }
+        else {
+            proposedPageIndex = topFeatureIndex;
+        }
+    }
+    else {
+        proposedPageIndex = roundf(proposedContentOffset.y / self.slidingCellDragVelocity);
+    }
     CGFloat nearestPageOffset = proposedPageIndex * self.slidingCellDragVelocity;
     return CGPointMake(proposedContentOffset.x, nearestPageOffset);
 }

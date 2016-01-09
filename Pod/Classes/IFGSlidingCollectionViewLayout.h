@@ -47,6 +47,7 @@
 @property (assign, nonatomic) CGFloat                       slidingCellCollapsedHeight;
 @property (assign, nonatomic) CGFloat                       slidingCellDragDumping;
 @property (assign, nonatomic) UIEdgeInsets                  insets;
+@property (nonatomic, assign) BOOL                          pagingEnabled;
 
 - (CGFloat)currentCellIndex;
 - (void)postInitialization;

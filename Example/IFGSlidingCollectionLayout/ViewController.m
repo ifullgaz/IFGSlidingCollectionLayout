@@ -61,9 +61,11 @@ static NSString * const reuseIdentifier = @"CollectionCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    self.collectionView.pagingEnabled = YES;
     // Do any additional setup after loading the view, typically from a nib.
     IFGSlidingCollectionViewLayout *layout = (IFGSlidingCollectionViewLayout *)self.collectionViewLayout;
     layout.slidingCellDragDumping     = .5;
+    layout.pagingEnabled = YES;
 //    layout.slidingCellCollapsedHeight = 88;
 //    layout.slidingCellFeatureHeight   = 240;
 //    layout.insets = UIEdgeInsetsMake(100, 20, 50, 20);
